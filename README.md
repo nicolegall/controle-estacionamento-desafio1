@@ -61,6 +61,7 @@ controle-estacionamento/
 2. Abra o arquivo `index.html` no navegador (ou use a extensão *Live Server* do VS Code).
 
 **Observação:** No Firefox, abrir os arquivos direto do computador impede que as reservas cadastradas apareçam na listagem, neste caso, abra o projeto pelo link online ou pelo Live Server. 
+
 Para ver o `console.log`, aperte F12 e abra a aba Console.
 
 ## Tecnologias
