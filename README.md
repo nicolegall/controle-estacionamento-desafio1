@@ -1,8 +1,8 @@
 # Controle de Estacionamento
 
-**Desenvolvimento Web**.
-Analise e Desenvolvimento de Sistemas
-Unisenai/SC
+**Desenvolvimento Web**\
+Análise e Desenvolvimento de Sistemas\
+Unisenai/SC\
 Grupo 17
 
 
@@ -54,7 +54,7 @@ controle-estacionamento/
 
 ## Como executar
 
-**Online:** acesse o link:
+**Online:** acesse o link: https://nicolegall.github.io/controle-estacionamento-desafio1/
 
 **No computador**:
 1. Baixe ou clone este repositório.
