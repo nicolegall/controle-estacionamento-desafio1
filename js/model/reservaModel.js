@@ -6,14 +6,14 @@
  */
 
 const TOTAL_VAGAS = 30;
-const CHAVE_STORAGE = 'estacionamento:reservas-v2'; // nome novo para carregar os novos dados fictícios
+const CHAVE_STORAGE = 'estacionamento:reservas-v3'; // nome novo para carregar os novos dados fictícios
 
 // Dados fictícios usados na primeira vez que o sistema é aberto
 const RESERVAS_INICIAIS = [
-  { id: 1, placa: 'ABC1D23', proprietario: 'Proprietário 1', apartamento: 101, bloco: 'A', modelo: 'Hyundai', cor: 'Prata', vaga: 5 },
-  { id: 2, placa: 'BRA2E19', proprietario: 'Proprietário 2', apartamento: 204, bloco: 'B', modelo: 'Fiat', cor: 'Branco', vaga: 9 },
-  { id: 3, placa: 'QWE4567', proprietario: 'Proprietário 4', apartamento: 302, bloco: 'A', modelo: 'Nissan', cor: 'Preto', vaga: 24 },
-  { id: 4, placa: 'RTY8F90', proprietario: 'Proprietário 3', apartamento: 403, bloco: 'C', modelo: 'Honda', cor: 'Vermelho', vaga: 12 }
+  { id: 1, placa: 'ABC1D23', proprietario: 'Proprietário A', apartamento: 101, bloco: 'A', modelo: 'Hyundai', cor: 'Prata', vaga: 5 },
+  { id: 2, placa: 'BRA2E19', proprietario: 'Proprietário B', apartamento: 204, bloco: 'B', modelo: 'Fiat', cor: 'Branco', vaga: 9 },
+  { id: 3, placa: 'QWE4567', proprietario: 'Proprietário C', apartamento: 302, bloco: 'A', modelo: 'Nissan', cor: 'Preto', vaga: 24 },
+  { id: 4, placa: 'RTY8F90', proprietario: 'Proprietário D', apartamento: 403, bloco: 'C', modelo: 'Honda', cor: 'Vermelho', vaga: 12 }
 ];
 
 // Lê a lista salva no navegador (texto JSON) e converte para array
