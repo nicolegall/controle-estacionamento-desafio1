@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento | Vagas cadastradas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="lateral">
+    <h1 class="marca">Estacionamento</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="ativo">Vagas cadastradas</a></li>
+        <li><a href="vagas.html">Vagas disponíveis</a></li>
+        <li><a href="cadastro.html">Nova reserva</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="parte-principal">
+    <main class="conteudo">
+      <section class="painel">
+        <h2>Vagas cadastradas</h2>
+        <p class="dica">Reservas de vagas registradas no condomínio.</p>
+
+        <div class="tabela-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Vaga</th>
+                <th>Placa</th>
+                <th>Proprietário</th>
+                <th>Apto</th>
+                <th>Bloco</th>
+                <th>Modelo</th>
+                <th>Cor</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-reservas">
+              <!-- linhas criadas pelo JavaScript-->
+            </tbody>
+          </table>
+        </div>
+
+        <p id="lista-vazia" class="aviso-vazio oculto">Nenhuma vaga cadastrada até o momento.</p>
+      </section>
+    </main>
+  </div>
+
+  <!--  Model → View → Controller -->
+  <script src="js/model/reservaModel.js"></script>
+  <script src="js/view/reservaView.js"></script>
+  <script src="js/controller/listagemController.js"></script>
+</body>
+</html>

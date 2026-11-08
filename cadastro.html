@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento | Cadastro de reserva</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="lateral">
+    <h1 class="marca">Estacionamento</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Vagas cadastradas</a></li>
+        <li><a href="vagas.html">Vagas disponíveis</a></li>
+        <li><a href="cadastro.html" class="ativo">Nova reserva</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="parte-principal">
+    <main class="conteudo">
+      <section class="painel painel-formulario">
+        <a href="vagas.html" class="voltar">&larr; Voltar ao mapa de vagas</a>
+        <h2>Cadastro de reserva de vaga</h2>
+        <p class="dica">Preencha todos os campos e clique em Salvar.</p>
+
+        <div id="erros" class="caixa-erros oculto" role="alert"></div>
+
+        <form id="form-reserva" novalidate>
+          <fieldset>
+            <legend>Veículo</legend>
+            <div class="grupo-campos">
+              <div class="campo">
+                <label for="placa">Placa do veículo</label>
+                <input type="text" id="placa" name="placa" maxlength="8" placeholder="Ex.: ABC1D23" required>
+              </div>
+              <div class="campo">
+                <label for="modelo">Modelo do veículo</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Ex.: Fiat" required>
+              </div>
+              <div class="campo">
+                <label for="cor">Cor do veículo</label>
+                <input type="text" id="cor" name="cor" placeholder="Ex.: Branco" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Proprietário</legend>
+            <div class="grupo-campos">
+              <div class="campo campo-largo">
+                <label for="proprietario">Nome do proprietário</label>
+                <input type="text" id="proprietario" name="proprietario" placeholder="Nome completo" required>
+              </div>
+              <div class="campo">
+                <label for="apartamento">Número do apartamento</label>
+                <input type="number" id="apartamento" name="apartamento" min="1" placeholder="Ex.: 101" required>
+              </div>
+              <div class="campo">
+                <label for="bloco">Bloco do apartamento</label>
+                <select id="bloco" name="bloco" required>
+                  <option value="">Selecione...</option>
+                  <option value="A">Bloco A</option>
+                  <option value="B">Bloco B</option>
+                  <option value="C">Bloco C</option>
+                  <option value="D">Bloco D</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Vaga</legend>
+            <div class="grupo-campos">
+              <div class="campo">
+                <label for="vaga">Número da vaga</label>
+                <select id="vaga" name="vaga" required>
+                  <!-- opções criadas pelo JavaScript -->
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="acoes">
+            <button type="reset" class="btn btn-secundario">Limpar</button>
+            <button type="submit" class="btn btn-primario">Salvar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/model/reservaModel.js"></script>
+  <script src="js/view/reservaView.js"></script>
+  <script src="js/controller/cadastroController.js"></script>
+</body>
+</html>

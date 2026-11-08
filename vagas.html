@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento | Vagas disponíveis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="lateral">
+    <h1 class="marca">Estacionamento</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Vagas cadastradas</a></li>
+        <li><a href="vagas.html" class="ativo">Vagas disponíveis</a></li>
+        <li><a href="cadastro.html">Nova reserva</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="parte-principal">
+    <main class="conteudo">
+      <section class="painel">
+        <h2>Mapa de vagas</h2>
+
+        <div class="contadores" aria-label="Resumo das vagas">
+          <div class="contador">
+            <span class="contador-numero" id="resumo-ocupadas">0</span>
+            <span class="contador-rotulo">Reservadas</span>
+          </div>
+          <div class="contador contador-destaque">
+            <span class="contador-numero" id="resumo-disponiveis">0</span>
+            <span class="contador-rotulo">Livres</span>
+          </div>
+          <div class="contador">
+            <span class="contador-numero" id="resumo-total">0</span>
+            <span class="contador-rotulo">Total</span>
+          </div>
+        </div>
+
+        <div class="grupo-vagas">
+          <h3 class="grupo-titulo">Vagas disponíveis</h3>
+          <p class="dica">Clique em uma vaga disponível para fazer a reserva.</p>
+          <div id="grade-livres" class="grade-vagas">
+            <!-- cartões criados pelo JavaScript -->
+          </div>
+          <p id="livres-vazio" class="aviso-vazio oculto">Todas as vagas estão reservadas.</p>
+        </div>
+
+        <div class="grupo-vagas">
+          <h3 class="grupo-titulo">Vagas reservadas</h3>
+          <div id="grade-reservadas" class="grade-vagas">
+            <!-- cartões criados pelo JavaScript -->
+          </div>
+          <p id="reservadas-vazio" class="aviso-vazio oculto">Nenhuma vaga reservada até o momento.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/model/reservaModel.js"></script>
+  <script src="js/view/reservaView.js"></script>
+  <script src="js/controller/vagasController.js"></script>
+</body>
+</html>
